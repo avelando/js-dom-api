@@ -2,10 +2,11 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const app = express();
-const jwt = require('express-jwt');
+const { authorize } = require('express-jwt');
+
 const jwksRsa = require('jwks-rsa');
 
-const checkJwt = jwt({
+const checkJwt = authorize({
   secret: jwksRsa.expressJwtSecret({
     cache: true,
     rateLimit: true,
