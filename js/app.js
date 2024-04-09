@@ -33,7 +33,7 @@ async function login() {
 }
 
 async function logout() {
-    await auth0Client.logout({ returnTo: window.location.origin });
+    await auth0Client.logout({ returnTo: 'https://avelando.github.io/js-dom-api/' });
     user = null;
     updateUI(false);
 }
