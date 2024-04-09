@@ -28,8 +28,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('form-tarefa').addEventListener('submit', adicionarTarefa);
 });
 
+// async function login() {
+//     await auth0Client.loginWithRedirect();
+// }
+
 async function login() {
-    await auth0Client.loginWithRedirect();
+    const loginUrl = await auth0Client.buildAuthorizeUrl({
+        redirect_uri: 'https://avelando.github.io/js-dom-api/'
+    });
+
+    window.open(loginUrl, 'Auth0Login', 'width=800,height=600');
 }
 
 async function logout() {

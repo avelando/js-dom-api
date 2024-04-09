@@ -218,7 +218,7 @@ main {
     opacity: 0.5;
 }
 
-#tasks-list ul {
+.tasks-list ul {
     list-style-type: none;
     padding-left: 0;
 }
