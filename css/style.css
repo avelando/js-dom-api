@@ -174,6 +174,10 @@ main {
     margin-top: 0;
 }
 
+.tarefa ul {
+    list-style: none;
+}
+
 .tarefa p {
     font-size: 14px;
     color: #666;
