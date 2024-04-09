@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TO-DO</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <nav>
+        <h1>TO-DO</h1>
+        <div class="buttons">
+            <button id="btn-login" class="btn-login">Login</button>
+            <button id="btn-logout" class="btn-logout">Logout</button>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="tasks">
+              <div class="added">
+                <h2>Adicionar Tarefa</h2>
+                <form id="form-tarefa" class="added-tasks">
+                  <div class="title">
+                    <label for="title">Título</label>
+                    <input type="text" id="title" placeholder="Título da Tarefa">
+                  </div>
+                  <div class="info">
+                    <label for="info">Descrição</label>
+                    <input type="text" id="info" placeholder="Descrição da Tarefa">
+                  </div>
+                  <div class="label">
+                    <label for="label">Label</label>
+                    <input type="text" id="label" placeholder="Label/Etiqueta da Tarefa">
+                  </div>
+                  <div class="date">
+                    <label for="date">Data</label>
+                    <input type="date" id="date">
+                  </div>
+                  <div class="btn-submit">
+                    <button type="submit">Adicionar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="view-tasks">
+              <h2>Tarefas</h2>
+              <div id="tasks-list" class="tasks-list">
+                <ul></ul>
+              </div>
+            </div>
+          </div>          
+    </main>
+
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+nav h1 {
+    margin: 5px;
+}
+
+nav .buttons {
+    display: flex;
+    align-items: center;
+}
+
+nav button {
+    height: 40px;
+    width: 70px;
+}
+
+nav .btn-login {
+    background-color: transparent;
+    border: 2px solid #83ff78;
+    border-radius: 5px;
+    color: #83ff78;
+}
+
+nav .btn-login:hover {
+    background-color: #11cd00;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+nav .btn-logout {
+    background-color: transparent;
+    border: 2px solid #d3da00;
+    border-radius: 5px;
+    color: #d3da00;
+    display: none;
+}
+
+nav .btn-logout:hover {
+    background-color: #d3da00;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+main {
+    margin: 15px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.tasks {
+    width: 25%;
+    padding: 1px 20px 20px 20px;
+    background-color: rgb(255, 255, 255);
+    border: #acacac 2px solid;
+    border-radius: 24px;
+    filter: drop-shadow(0px 0px 10px #acacac);
+}
+
+.added h2 {
+    color: #333;
+    text-align: center;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-submit button {
+    width: auto;
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-submit button:hover {
+    background-color: #4cae4c;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.title, .info, .label, .date {
+    display: flex;
+    flex-direction: column;
+}
+
+.added-tasks label {
+    margin-bottom: 2px;
+}
+
+.added-tasks input {
+    margin: 5px 0 10px 0;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #636363;
+}
+
+.view-tasks {
+    padding: 0 20px 20px 20px;
+    background-color: #fff;
+    width: 70%;
+    margin: 5px 1px 10px 10px;
+    border: #acacac 2px solid;
+    border-radius: 24px;
+    height: 400px;
+    overflow-y: auto;
+    filter: drop-shadow(0px 0px 10px #acacac);
+}
+
+.tasks-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.tasks-list::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px; 
+}
+
+.tasks-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.tasks-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.view-tasks h2 {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    margin-top: 0;
+    padding: 10px 20px;
+    color: #333;
+    text-align: center;
+    z-index: 10;
+}
+
+.tarefa {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    padding: 10px 15px;
+}
+
+.tarefa h3 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.tarefa p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 10px;
+}
+
+.tarefa span {
+    display: inline-block;
+    background: #eff0f1;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #333;
+    margin-right: 5px;
+    padding: 3px 8px;
+}
+
+.tarefa time {
+    font-size: 12px;
+    color: #333;
+}
+
+.tarefa button {
+    border: none;
+    border-radius: 2px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.tarefa .concluir {
+    background-color: #28a745;
+    color: white;
+}
+
+.tarefa .excluir {
+    background-color: #dc3545;
+    color: white;
+}
+
+.tarefa.concluida {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .tasks {
+        width: 85%;
+        margin-bottom: 10px;
+        margin: 5px auto;
+    }
+
+    .view-tasks {
+        width: 85%;
+        height: 350px;
+        margin: 5px auto;
+    }
+}
