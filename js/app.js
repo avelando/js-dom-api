@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         auth0Client = await createAuth0Client({
             domain: 'dev-6je86woartrc1pi1.us.auth0.com',
             client_id: 'W167A9iGNOl6wtYnkNAkFbgkmclnFf4W',
-            redirect_uri: 'https://avelando.github.io/js-dom-api'
+            redirect_uri: 'http://avelando.github.io/js-dom-api/callback'
         });
 
         if (window.location.search.includes('code=')) {
