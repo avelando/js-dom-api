@@ -28,6 +28,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('form-tarefa').addEventListener('submit', adicionarTarefa);
 });
 
+async function login() {
+    await auth0Client.loginWithRedirect();
+}
+
 async function logout() {
     await auth0Client.logout({ returnTo: 'https://avelando.github.io/js-dom-api/' });
     user = null;
