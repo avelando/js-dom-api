@@ -218,11 +218,6 @@ main {
     opacity: 0.5;
 }
 
-.tasks-list ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
