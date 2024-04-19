@@ -10,6 +10,6 @@
   </div>
 
   <h5>
-    To Do List feita com uso da API Auth0, que possibilita o usuário fazer login no sistema e ter acesso as tarefas adicionadas por ele.
+    To Do List é um site feito com uso da API Auth0, que possibilita o usuário fazer login no sistema e ter acesso as tarefas adicionadas por ele.
   </h5>
 </div>
